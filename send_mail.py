@@ -63,7 +63,7 @@ if __name__ == "__main__":
         )
     except KeyError:
         sys.exit(
-            "Error in config file. Check whether the sections: EMAIL, PASS, SMTP and PORT are properly configured"
+            "Error in configfile. Check whether the sections: EMAIL, PASS, SMTP and PORT are properly configured"
         )
 
     for recipient in emails:
@@ -83,6 +83,7 @@ if __name__ == "__main__":
                     mail.add_attachment_binary(attachment)
         print(
             f"Sending email to: {recipient}.\nSubject: {subject}.\nBody: {text}.\nAttachments: {args.files}"
+            f" {args.filesbinary}"
         )
         mail.send_mail()
 

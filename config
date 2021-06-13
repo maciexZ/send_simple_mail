@@ -1,0 +1,14 @@
+#each section is considered a diffrent email address
+#the following variables must be defined:SMTP, PORT, EMAIL,PASS,SECURITY
+#this file must be placed in ~/.config/send_simple_mail/
+
+#example:
+#[IJON]
+#SMTP=smtp-mail.outlook.com
+#PORT=587
+#EMAIL=ijon_tichy@startraveller.com
+#PASS=zshdGY8I!00a
+#SECURITY=starttls
+
+#if you define section DEFAULT you don't have to passing -es comandline argument
+[DEFAULT]

@@ -7,5 +7,5 @@ url='#',
 author='maciex',
 author_email='leticja@protonmail.com',
 license='MIT',
-packages=['send_mail'],
+packages=['send_simple_mail'],
 zip_safe=False)
